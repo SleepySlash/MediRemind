@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/index.css"> <title>O C R</title>
+    <style>
+        /* CSS for the navbar only */
+        nav {
+            background-color: #333; /* Change this to your desired color */
+            color: #fff;
+            padding: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Add a subtle drop shadow */
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex; /* Use flexbox for easy layout */
+            justify-content: space-around; /* Evenly distribute items */
+        }
+
+        nav li {
+            padding: 10px;
+        }
+
+        nav a {
+            color: inherit;
+            text-decoration: none;
+            font-family: sans-serif; /* Set a stylish font */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+        }
+
+        nav a:hover {
+            color: #ddd;
+            /* Add a smooth transition for hover effect */
+            transition: color 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+
+<h2>Upload your prescription</h2>
+<form action="/upload/<%=Name%>" method="POST" enctype="multipart/form-data">
+    <h2>Patient name: <%=Name%></h2>
+    <input type="file" name="avatar">
+    <button type="submit">Set Alarms</button>
+</form>
+
+</body>
+</html>
